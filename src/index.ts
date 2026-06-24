@@ -12,5 +12,22 @@ let digits: number[] = [1, 5, 8, 9];
 let names: string[] = ["jak", "Mika", "Lili"];
 console.log(digits, names);
 // Object
+type userType = {
+  id: number;
+  name: string;
+  isActive: boolean;
+};
 
-let student:
+let user: userType ={
+  id: 1,
+  name: "Mika",
+  isActive: true,
+};
+console.log(user);
+// Function 
+function addNumbers(num1: number, num2: number): number {
+  return num1 + num2;
+}
+
+const result = addNumbers(10, 20);
+console.log(result);
